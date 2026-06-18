@@ -29,7 +29,7 @@
     <div class="wrap hero-inner">
       <div class="hero-text">
         <p class="eyebrow">Nagpur &middot; Vidarbha</p>
-        <h1>A page held open<br> for every reader<br> in Vidarbha.</h1>
+        <h1 id="hero-headline">A page held open for every reader in Vidarbha.</h1>
         <p class="hero-sub">We run community libraries, school reading programmes, and book exchanges so that a love of reading isn't a privilege of geography or income — it's a right of every child and neighbourhood in the region.</p>
         <div class="hero-actions">
           <a href="#involve" class="btn btn-primary">Get involved</a>
@@ -122,6 +122,49 @@
 </footer>
 
 <script>
+  // ── Rotating hero headline ─────────────────────────────────────────
+  // One line below is shown at random on each page load. To add, remove,
+  // or reword a line, just edit this list — keep each line in quotes with
+  // a comma at the end.
+  const heroLines = [
+    "A page held open for every reader in Vidarbha.",
+    "Where you're born should never decide what you get to read.",
+    "A library within walking distance of every life.",
+    "Books were never meant to be a luxury — here they aren't.",
+    "Reading — a right, not a privilege.",
+    "Every book is a door someone hasn't walked through yet.",
+    "One borrowed book can redraw an entire life.",
+    "A story is the cheapest way to travel the farthest.",
+    "Turn a page, and the world gets a little larger.",
+    "The quietest revolution begins with a single book.",
+    "A region of readers, slowly becoming a community.",
+    "Shelves with room for a whole neighbourhood.",
+    "Here, no one has to read alone.",
+    "A childhood with books in it changes everything that follows.",
+    "Every child in Vidarbha, a reader.",
+    "Hand a child a story, and watch how far they go.",
+    "The next chapter of Vidarbha begins on a page.",
+    "Borrow a book the way it should be — freely, with dignity.",
+    "No late fees, no locked doors — only books.",
+    "Bring one book. Borrow from thousands.",
+    "A shelf is an invitation; consider yourself invited.",
+    "Vidarbha always had its stories — now it has the shelves.",
+    "From Nagpur outward, a region reading for joy.",
+    "Putting books within Vidarbha's reach, at last.",
+    "Some inheritances are handed down in paperback.",
+    "Come for one book; leave with a hundred more waiting.",
+    "The thousands on our shelves are waiting for you.",
+    "Reading isn't something we teach — it's something we share.",
+    "A good book is the most patient teacher there is.",
+    "Open a book here, and you're never quite the same."
+  ];
+
+  const headline = document.getElementById('hero-headline');
+  if (headline) {
+    headline.textContent = heroLines[Math.floor(Math.random() * heroLines.length)];
+  }
+
+  // Footer year
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
