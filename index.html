@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vidarbha Literary Foundation</title>
+<meta name="description" content="Vidarbha Literary Foundation builds reading habits and community libraries across Nagpur and the Vidarbha region.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="mark">Vidarbha<span class="mark-accent">Literary</span></a>
+    <nav class="nav">
+      <a href="#mission">Mission</a>
+      <a href="#programs">Programs</a>
+      <a href="#involve">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Nagpur &middot; Vidarbha</p>
+        <h1>A page held open<br> for every reader<br> in Vidarbha.</h1>
+        <p class="hero-sub">We run community libraries, school reading programmes, and book exchanges so that a love of reading isn't a privilege of geography or income — it's a right of every child and neighbourhood in the region.</p>
+        <div class="hero-actions">
+          <a href="#involve" class="btn btn-primary">Get involved</a>
+          <a href="#mission" class="btn btn-ghost">Our mission</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="book-stack">
+          <div class="spine spine-1"></div>
+          <div class="spine spine-2"></div>
+          <div class="spine spine-3"></div>
+          <div class="spine spine-4"></div>
+          <div class="spine spine-5"></div>
+        </div>
+        <div class="open-book">
+          <div class="page page-left"></div>
+          <div class="page page-right"></div>
+          <div class="spine-fold"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="wrap stats-inner">
+      <div class="stat">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Community library<br>in active circulation</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">40+</span>
+        <span class="stat-label">Lesson plans built<br>for school outreach</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Late fees, ever —<br>credits, not due dates</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission" class="mission">
+    <div class="wrap">
+      <p class="eyebrow">Why we exist</p>
+      <h2>Books move slowly in Vidarbha.<br>We're here to change the pace.</h2>
+      <p class="mission-body">Across Nagpur's neighbourhoods and the smaller towns around it, the nearest library is often a bus ride away, and a personal book collection is a luxury most households skip. Vidarbha Literary Foundation was founded to close that gap directly — not with charity, but with infrastructure: shelves people can actually reach, a system that treats every borrower with dignity, and a reading culture that starts in the classroom and follows children home.</p>
+    </div>
+  </section>
+
+  <section id="programs" class="programs">
+    <div class="wrap">
+      <p class="eyebrow">What we run</p>
+      <h2>Three ways we put books in hands.</h2>
+      <div class="program-grid">
+        <article class="program-card">
+          <div class="program-mark">Library</div>
+          <h3>MetroBookX</h3>
+          <p>A free, credit-based community book exchange. No late fees, no due dates — members borrow and return on their own schedule, organised by a simple colour-coded rack system that makes finding a book intuitive for everyone, regardless of reading level.</p>
+        </article>
+        <article class="program-card">
+          <div class="program-mark">Schools</div>
+          <h3>Reading Outreach</h3>
+          <p>Structured lesson plans and discussion guides for school classrooms, built around full novels rather than excerpts, so students experience a complete story and the satisfaction of finishing a book they chose to keep reading.</p>
+        </article>
+        <article class="program-card">
+          <div class="program-mark">Community</div>
+          <h3>Neighbourhood Events</h3>
+          <p>Reading circles, donation drives, and open-shelf days that turn the library into a gathering place — because a book exchange works best when it's also where people run into each other.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="involve" class="involve">
+    <div class="wrap involve-inner">
+      <p class="eyebrow">Join us</p>
+      <h2>Three ways to help a shelf reach someone.</h2>
+      <div class="involve-grid">
+        <div class="involve-item">
+          <h3>Donate books</h3>
+          <p>Clear a shelf at home and give a story a second reader. We accept fiction and non-fiction in English, Hindi, and Marathi.</p>
+        </div>
+        <div class="involve-item">
+          <h3>Volunteer</h3>
+          <p>Help run a reading session, sort donations, or support an outreach visit at a partner school.</p>
+        </div>
+        <div class="involve-item">
+          <h3>Support us</h3>
+          <p>Contributions go directly toward shelving, school materials, and keeping every exchange free to join.</p>
+        </div>
+      </div>
+      <a href="mailto:hello@vidarbhaliterary.org" class="btn btn-primary btn-large">Write to us</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>Vidarbha Literary Foundation &middot; Nagpur, Maharashtra</span>
+    <span>&copy; <span id="year"></span></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
