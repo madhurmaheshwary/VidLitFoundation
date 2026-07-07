@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project LitSpark &middot; Vidarbha Literary Foundation</title>
+<meta name="description" content="Project LitSpark is the school outreach programme of the Vidarbha Literary Foundation and Balmitra Foundation, building reading habits among school children in Nagpur through activities built around a shared book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Tiro+Devanagari+Marathi:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="mark">Vidarbha <span class="mark-accent">Literary</span> Foundation </a>
+    <nav class="nav">
+      <a href="index.html#mission">Mission</a>
+      <a href="index.html#programs">Programs</a>
+      <a href="index.html#involve">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="litspark-hero">
+    <div class="wrap">
+      <a href="index.html#programs" class="back-link"><span>&larr;</span> All programmes</a>
+      <div class="litspark-hero-inner">
+        <div class="litspark-hero-text">
+          <p class="eyebrow">School Outreach Program</p>
+          <h1>Project LitSpark</h1>
+          <p class="litspark-tagline">Igniting your imagination.</p>
+          <div class="prose">
+            <p>The Vidarbha Literary Foundation and the <strong>Balmitra Foundation</strong> have joined hands to grow a love of reading among school children in Nagpur through a programme aptly named <em>LitSpark</em>. We choose international best-sellers with inspiring stories centred on young people, then engage students in thoughtfully crafted activities that draw out the heart of each book &mdash; while building real skills along the way: public speaking, vocabulary, research, practical computing, and much more.</p>
+            <p>Our pilot began on <strong>12 July 2025</strong> at <a href="https://svsnagpur.edu.in/" target="_blank" rel="noopener">Sanskar Vidya Sagar School</a>, Nandanvan, Nagpur, where a dedicated Saturday slot lets us meet the school's wonderful, enthusiastic students week after week. We are deeply grateful to Director Asha Kamath, Principal Deshpande, and the teaching staff for making room for reading in their week.</p>
+          </div>
+        </div>
+        <figure class="litspark-poster">
+          <img src="assets/litspark.png" alt="Project LitSpark poster — two children reading, with the tagline Igniting Your Imagination">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="book-picks">
+    <div class="wrap">
+      <p class="eyebrow">This season's books</p>
+      <h2>The stories we're reading together.</h2>
+      <p class="picks-note">Each LitSpark cycle is built around one complete book. Click a cover to explore its dedicated page &mdash; the author's story, and a trail of resources to dig deeper.</p>
+      <div class="picks-grid">
+        <a class="cover-card" href="wonder.html">
+          <img src="assets/wonder.png" alt="Cover of Wonder by R.J. Palacio">
+          <h3>Wonder</h3>
+          <span class="cover-cta">Explore &rarr;</span>
+        </a>
+        <a class="cover-card" href="theboy.html">
+          <img src="assets/the-boy.png" alt="Cover of The Boy Who Harnessed the Wind">
+          <h3>The Boy Who Harnessed the Wind</h3>
+          <span class="cover-cta">Explore &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>Vidarbha Literary Foundation &middot; Nagpur, Maharashtra &middot; <a href="mailto:info@vidlitfoundation.org">info@vidlitfoundation.org</a></span>
+    <span>&copy; <span id="year"></span></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

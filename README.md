@@ -27,9 +27,17 @@ framework preset as "Other" — no build command or output directory needed.
 ## Structure
 
 ```
-index.html     -- page markup and content
+index.html     -- home page markup and content
+litspark.html  -- Project LitSpark school-programme page (links to the book pages)
+wonder.html    -- book page: Wonder (author, kindness resources, learning corner)
+theboy.html    -- book page: The Boy Who Harnessed the Wind
 styles.css     -- design system and layout (tokens at the top of the file)
+assets/        -- book covers and the LitSpark poster
 ```
+
+The book covers on the LitSpark page link through to `wonder.html` and
+`theboy.html`. Sub-page styles live at the bottom of `styles.css` under the
+"Sub-pages" heading and reuse the same `:root` tokens as the home page.
 
 ## Editing content
 
